@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h2>Welcome, <span th:text="${username}"></span></h2>
+
+<nav>
+    <a href="/buy">Buy Policy</a> |
+    <a href="/claim?policyName=Vehicle Insurance">Claim Policy</a> |
+    <a href="/profile">Profile</a> |
+    <a href="/support">Support</a> |
+    <a href="/">Logout</a>
+</nav>
+
+<h3>Available Policies</h3>
+<div id="policies"></div>
+
+<script src="/script.js"></script>
+</body>
+</html>
