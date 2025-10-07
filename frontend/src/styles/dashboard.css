@@ -1,0 +1,41 @@
+/* === Dashboard Layout & Widgets === */
+
+.dashboard-container {
+  @apply flex min-h-screen bg-gray-100;
+}
+
+.dashboard-content {
+  @apply flex-1 ml-64 p-8; /* space for sidebar */
+}
+
+.dashboard-header {
+  @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.tile-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8;
+}
+
+.chart-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8;
+}
+
+.dashboard-card {
+  @apply bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition;
+}
+
+.table-container {
+  @apply bg-white p-6 rounded-2xl shadow-md mt-8 overflow-x-auto;
+}
+
+.table-container table {
+  @apply w-full text-left border-collapse;
+}
+
+.table-container th {
+  @apply border-b-2 border-gray-200 py-3 px-4 text-sm font-semibold text-gray-700;
+}
+
+.table-container td {
+  @apply border-b border-gray-100 py-3 px-4 text-sm text-gray-600;
+}

@@ -1,0 +1,127 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* ====== LOGIN / REGISTER BOX ====== */
+.login-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.logo h2 {
+  text-align: center;
+  margin: 15px 0 25px 0;
+  color: #4a90e2;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* ====== FORM ELEMENTS ====== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 16px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* ====== BUTTONS ====== */
+button.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button.btn:hover {
+  background: #357ab8;
+}
+
+/* ====== REGISTER TEXT ====== */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* ====== ILLUSTRATION ====== */
+.illustration img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+/* ====== CHECKBOX ====== */
+label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .illustration img {
+    max-width: 250px;
+  }
+}

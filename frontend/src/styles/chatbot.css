@@ -1,0 +1,45 @@
+/* === Chatbot Page & Voice Assistant === */
+
+.chatbot-wrapper {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-900 to-blue-600;
+}
+
+.chat-window {
+  @apply bg-white w-full max-w-2xl h-[600px] rounded-2xl shadow-2xl flex flex-col;
+}
+
+.chat-messages {
+  @apply flex-1 p-6 overflow-y-auto space-y-3;
+}
+
+.chat-message {
+  @apply max-w-[80%] p-3 rounded-xl text-sm shadow-sm;
+}
+
+.chat-message.user {
+  @apply bg-blue-600 text-white self-end;
+}
+
+.chat-message.bot {
+  @apply bg-gray-200 text-gray-800 self-start;
+}
+
+.chat-input {
+  @apply flex items-center border-t border-gray-200;
+}
+
+.chat-input input {
+  @apply flex-1 p-3 outline-none border-none;
+}
+
+.chat-input button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-r-xl hover:bg-blue-700 transition;
+}
+
+.voice-button {
+  @apply bg-yellow-400 text-gray-900 p-2 rounded-full ml-3 hover:bg-yellow-500 transition;
+}
+
+.chat-header {
+  @apply text-lg font-semibold text-center py-4 bg-blue-700 text-white rounded-t-2xl;
+}
